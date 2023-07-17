@@ -11,9 +11,12 @@ html{
     .lista{
         margin-left: 40%;
         margin-top: 8%;
-        width: 15%;
+        width: 13.5%;
         display: flex;
         background: #7faae2;
+        mat-divider{
+            background: #010101;
+        }
     }
     footer {
         background-color: rgb(5, 2, 5);

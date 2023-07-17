@@ -34,7 +34,10 @@ export class AppComponent {
   ];
   mostrarLista:boolean = true;
   
+  MostrarLista(): void{
+    this.mostrarLista = true;
+  }
   noMostrarLista(): void{
-    this.mostrarLista = !this.mostrarLista;
+    this.mostrarLista = false;
   }
 }

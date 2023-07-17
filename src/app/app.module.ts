@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 
@@ -22,7 +24,8 @@ import {MatListModule} from '@angular/material/list';
     MatListModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

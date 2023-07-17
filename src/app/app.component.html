@@ -3,17 +3,20 @@
     <p>
       <mat-toolbar>
         <span>Angular Material</span>
-        <button type="button" class="btn btn-outline-primary" (click)="noMostrarLista()">Mostrar Lista</button>
+        <button type="button" class="btn btn-outline-primary" (click)="MostrarLista()">Mostrar Lista</button>
+        <button mat-raised-button color="primary"(click)="noMostrarLista()">No mostrar lista</button>
       </mat-toolbar>
     </p>
   </div>
 <div *ngIf="mostrarLista" class="lista">
   <mat-list >
     <mat-list-item class="columnaNombres">Nombres</mat-list-item>
+    <mat-divider></mat-divider>
     <mat-list-item *ngFor="let elemento of elementos"> {{elemento.nombre}} </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item class="columnaCostos">Costos</mat-list-item>
+    <mat-divider></mat-divider>
     <mat-list-item *ngFor="let elemento of elementos"> {{elemento.costo}} </mat-list-item>
   </mat-list>
 </div>
